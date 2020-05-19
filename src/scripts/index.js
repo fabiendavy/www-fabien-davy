@@ -1,3 +1,4 @@
-import '../styles/index.scss';
+import '../styles/application.scss';
+import { initTypedJs } from './init_typed';
 
-console.log('webpack starterkit');
+initTypedJs();

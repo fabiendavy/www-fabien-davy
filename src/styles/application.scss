@@ -5,3 +5,16 @@
 
 // files
 @import './pages/index.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Proza Libre', sans-serif
+}
+
+html {
+  scroll-behavior: smooth;
+}

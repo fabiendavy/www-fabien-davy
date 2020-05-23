@@ -1,0 +1,34 @@
+import anime from 'animejs/lib/anime.es.js';
+
+const fadeInScroll = () => {
+  const portfolioElements = document.querySelectorAll('.portfolio-item');
+
+  window.addEventListener('scroll', () => {
+    
+    portfolioElements.forEach((item) => {
+      const windowBottom = window.innerHeight + window.scrollY;
+      const topItem = item.offsetTop;
+      const extraTopItem = item.offsetTop + 150;
+      // const bottomItem = item.offsetTop + item.offsetHeight;
+
+      if (windowBottom > extraTopItem) {
+        anime({
+          targets: item,
+          translateY: 20,
+          opacity: 1,
+          duration: 4000
+        });
+      } else if (windowBottom < topItem) {
+        anime({
+          targets: item,
+          translateY: -20,
+          opacity: 0,
+          duration: 4000
+        });
+      }
+    });
+  });
+
+};
+
+export { fadeInScroll };

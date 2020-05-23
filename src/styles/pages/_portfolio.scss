@@ -11,6 +11,8 @@
     width: 100%;
     padding: 50px 0;
     display: flex;
+    opacity: 0;
+    transform: translateY(-20px);
     .portfolio-item-image {
       width: 50vw;
       display: flex;
@@ -23,7 +25,6 @@
         transition: all .5s;
         position: relative;
         img {
-          // background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))
           transition: all .5s;
           display: flex;
           justify-content: center;

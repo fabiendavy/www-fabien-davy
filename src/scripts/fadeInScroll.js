@@ -8,22 +8,22 @@ const fadeInScroll = () => {
     portfolioElements.forEach((item) => {
       const windowBottom = window.innerHeight + window.scrollY;
       const topItem = item.offsetTop;
-      const extraTopItem = item.offsetTop + 150;
+      const extraTopItem = item.offsetTop + 250;
       // const bottomItem = item.offsetTop + item.offsetHeight;
 
       if (windowBottom > extraTopItem) {
         anime({
           targets: item,
-          translateY: 20,
+          translateY: -20,
           opacity: 1,
-          duration: 4000
+          duration: 3000
         });
       } else if (windowBottom < topItem) {
         anime({
           targets: item,
-          translateY: -20,
+          translateY: 20,
           opacity: 0,
-          duration: 4000
+          duration: 3000
         });
       }
     });

@@ -1,7 +1,7 @@
 import anime from 'animejs/lib/anime.es.js';
 
 const fadeInScroll = () => {
-  const portfolioElements = document.querySelectorAll('.portfolio-item');
+  const portfolioElements = document.querySelectorAll('.portfolio-item, .card');
 
   window.addEventListener('scroll', () => {
     

@@ -19,3 +19,24 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+#portfolio, #formation, #contact {
+  max-width: 1400px;
+  margin: 0 auto;
+  
+  h2 {
+    padding: 150px 0;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.2em;
+    color: black;
+  }
+}
+
+hr.break {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 1px;
+  background-color: rgb(226, 226, 226);
+  border: none;
+}

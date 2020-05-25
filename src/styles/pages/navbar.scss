@@ -1,0 +1,32 @@
+nav {
+  // display: none;
+  opacity: 0;
+  box-shadow: 0 0 10px 10px rgb(182, 182, 182);
+  a {
+    color: black;
+    display: inline;
+    font-size: 1em;
+    position: relative;
+    transition: clip-path 150ms ease;
+    &:hover span::before, &:focus span::before {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    span {
+      position: relative;
+      display: inline-block;
+      color: black;
+      &::before {
+        position: absolute;
+        content: attr(data-content);
+        color: black;
+        text-decoration: underline;
+        text-decoration-color: black;
+        clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+        transition: clip-path 150ms ease;
+      }
+    }
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+}

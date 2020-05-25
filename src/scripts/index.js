@@ -2,8 +2,14 @@ import '../styles/application.scss';
 import { initTypedJs } from './init_typed';
 import { fadeInScroll } from './fadeInScroll';
 import { navbar, displayNavbar } from './navbar';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
-initTypedJs();
-fadeInScroll();
-navbar();
-displayNavbar();
+window.addEventListener('load', () => {
+  initTypedJs();
+  // fadeInScroll();
+  navbar();
+  displayNavbar();
+  AOS.init();
+});
+

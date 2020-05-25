@@ -1,0 +1,18 @@
+footer {
+  ul {
+    margin: 40px 0;
+    text-align: center;
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  i {
+    font-size: 2em;
+    color: #B5B5B5;
+    transition: color .3s;
+    &:hover {
+      color: rgb(100, 100, 100);
+    }
+  }
+}
